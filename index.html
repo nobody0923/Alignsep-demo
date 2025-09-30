@@ -546,7 +546,7 @@
                   </table>
               </div>
           <br>
-          <h1 id="Temporally-Aligned" class="title is-3">B.Temporally-Aligned Sound Separation.</h1>
+          <!-- <h1 id="Temporally-Aligned" class="title is-3">B.Temporally-Aligned Sound Separation.</h1>
               <div class="grid-container">
                   <table >
                       <tr >
@@ -556,45 +556,47 @@
                         <th>AlignSep</th>
                         <th>OmniSep</th>
 
-                      </tr>
+                      </tr> -->
 
-                      <tr >
-                          <th style="width: 300px; vertical-align:middle;">
-                            <video src="demo_audio/target_video/00069.mp4" controls style="width: 300px; height: auto;">
-                                您的浏览器不支持 video 标签。
-                            </video>
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <img src="demo_audio\mixed_mel\00069_mel.png" controls style="max-width: 100%; height: auto;">
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <img src="demo_audio\target_mel\00069_mel.png" controls style="max-width: 100%; height: auto;">
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <img src="demo_audio\alignsep\mel\00069_mel.png" controls style="max-width: 100%; height: auto;">
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <img src="data\omnisep\small_hardset\mel\000069_mel.png" controls style="max-width: 100%; height: auto;">
-                          </th>
-                      </tr>
-
-                      <tr >
-                          <th style="width: 300px; vertical-align:middle;">
-                              <!-- <audio controls style="width: 200px;"><source src="demo_audio\target_wav\00069.wav"></audio> -->
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <audio controls style="width: 200px;"><source src="demo_audio/mixed_wav/00069.wav"></audio>
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <audio controls style="width: 200px;"><source src="demo_audio/target_wav/00069.wav"></audio>
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <audio controls style="width: 200px;"><source src="demo_audio/alignsep/wav/00069.wav"></audio>
-                          </th>
-                          <th style="width: 300px; vertical-align:middle;">
-                              <audio controls style="width: 200px;"><source src="data/omnisep/small_hardset/wav/00069.wav"></audio>
-                          </th>
-                      </tr>
+            <h1 id="Temporally-Aligned" class="title is-3">B. Temporally-Aligned Sound Separation.</h1>
+            <div class="grid-container">
+            <table>
+                <thead>
+                <tr>
+                    <th style="width: 25%; text-align: center;">Target (Original Video + Target Audio)</th>
+                    <th style="width: 25%; text-align: center;">Mixture</th>
+                    <th style="width: 25%; text-align: center;">AlignSep (Ours)</th>
+                    <th style="width: 25%; text-align: center;">OmniSep</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00069_target.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00069_mixture.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00069_alignsep.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00069_omnisep.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+                </tr>
+                </tbody>
 
 
                       <!-- <tr >
@@ -705,7 +707,6 @@
 
                       <tr >
                           <th style="width: 300px; vertical-align:middle;">
-                              <!-- <audio controls style="width: 200px;"><source src="res/query_aug/text_query/sample1/mix.wav"></audio> -->
                           </th>
                           <th style="width: 300px; vertical-align:middle;">
                               <audio controls style="width: 200px;"><source src="demo_audio\mixed_wav\00001.wav"></audio>
@@ -721,6 +722,50 @@
                           </th>
                       </tr>
 
+            <!-- <h1 id="Holes" class="title is-3">C. Sound Separation without Holes.</h1>
+            <div class="grid-container">
+            <table>
+                <thead>
+                <tr>
+                    <th style="width: 25%; text-align: center;">Target (Original Video + Target Audio)</th>
+                    <th style="width: 25%; text-align: center;">Mixture</th>
+                    <th style="width: 25%; text-align: center;">AlignSep (Ours)</th>
+                    <th style="width: 25%; text-align: center;">OmniSep</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00001_target.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+            
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00001_mixture.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+            
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00001_alignsep.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+            
+                    <td style="width: 25%; vertical-align: top;">
+                    <video controls muted loop playsinline style="width: 100%;">
+                        <source src="demo_audio/combined_videos/00001_omnisep.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </div> -->
 
                       <!-- <tr >
                           <th rowspan="2" style="width: 300px; vertical-align:middle;">
